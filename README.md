@@ -50,14 +50,14 @@ h_blue = np.array([130, 255, 255])
 
 ``` python
 mask = cv2.inRange(hsv, l_blue, h_blue)
-    # cv2.imshow("mask", mask)
+# cv2.imshow("mask", mask)
 
-    part1 = cv2.bitwise_and(back, back, mask=mask)
-    # cv2.imshow("part1", part1)
+part1 = cv2.bitwise_and(back, back, mask=mask)
+# cv2.imshow("part1", part1)
 
-    mask = cv2.bitwise_not(mask)
+mask = cv2.bitwise_not(mask)
 
-    part2 = cv2.bitwise_and(frame, frame, mask=mask)
+part2 = cv2.bitwise_and(frame, frame, mask=mask)
 ```
 
 ### Invisible Cloak
