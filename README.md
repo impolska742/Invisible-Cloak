@@ -33,7 +33,7 @@ if cv2.waitKey(5) == ord("q"):
     break
 ```
 
-#### In this project I've used Blue as the color of my cloak. After working with the background image, the low saturation and the high saturation of my color, i.e Blue is set using NumPy arrays.
+#### In [this](invisible-cloak.py) project I've used Blue as the color of my cloak. After working with the background image, the low saturation and the high saturation of my color, i.e Blue is set using NumPy arrays.
 
 ```python
 blue = np.uint8([[[255, 0, 0]]])
